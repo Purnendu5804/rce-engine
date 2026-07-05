@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Submission" ALTER COLUMN "stdin" DROP NOT NULL,
+ALTER COLUMN "stdout" DROP NOT NULL,
+ALTER COLUMN "stderr" DROP NOT NULL;

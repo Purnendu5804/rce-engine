@@ -1,7 +1,7 @@
 export interface SubmissionRequest {
   language: string;
   code: string;
-  stdin?: string;
+  stdin: string;
 }
 
 export interface SubmissionResponse {

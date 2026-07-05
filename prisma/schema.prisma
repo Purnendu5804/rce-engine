@@ -10,7 +10,6 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 
@@ -18,9 +17,9 @@ model Submission{
     id String @id @default(uuid())
     language String
     code String
-    stdin String
-    stdout String
-    stderr String
+    stdin String?
+    stdout String?
+    stderr String?
     exitCode Int?
     status String
     createdAt DateTime @default(now())
